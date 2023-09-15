@@ -932,7 +932,7 @@ class Umbrella {
     let _letters = [];
     let result = {
       word,
-      wide: cangjie[''],
+      wide: cangjie['predict'],
       web: []
     };
     
@@ -948,19 +948,19 @@ class Umbrella {
     if (n.length >= 2) {
       switch(n[1]) {
         case 'value':
-          result.wide = cangjie[''];
+          result.wide = cangjie['big'];
           break;
 
         case 'function':
-          result.wide = cangjie[''];
+          result.wide = cangjie['gold'];
           break;
 
         case 'behavior':
-          result.wide = cangjie[''];
+          result.wide = cangjie['mountain'];
           break;
 
         case 'result':
-          result.wide = cangjie[''];
+          result.wide = cangjie['one'];
           break;
       }
     }
